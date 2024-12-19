@@ -1,0 +1,6 @@
+mat-tab-group{
+    margin:20px;
+}
+mat-tab-group mat-tab{
+    padding:20px;
+}

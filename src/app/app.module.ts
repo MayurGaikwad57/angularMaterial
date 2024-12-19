@@ -15,6 +15,7 @@ import { ChildComponent } from './parent/child/child.component';
 import { PaginateComponent } from './paginate/paginate.component';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { CallDialogComponent } from './call-dialog/call-dialog.component';
+import { TabsComponent } from './tabs/tabs.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { CallDialogComponent } from './call-dialog/call-dialog.component';
     ParentComponent,
     ChildComponent,
     PaginateComponent,
-    CallDialogComponent
+    CallDialogComponent,
+    TabsComponent
   ],
   entryComponents:[DialogComponent], // dialog component has to included here in entry components array
   imports: [
