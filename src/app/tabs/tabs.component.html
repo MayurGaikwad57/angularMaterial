@@ -1,0 +1,14 @@
+<!-- <mat-tab-group>
+    <mat-tab label="1">Content 1</mat-tab>
+    <mat-tab label="2"  >Content 2</mat-tab>
+    <mat-tab label="3" >Content 3</mat-tab>
+</mat-tab-group> -->
+<mat-tab-group>
+    <mat-tab *ngFor="let value of tabs">
+        <ng-template mat-tab-label>{{value.label}}</ng-template>
+       <p>{{value.content}}</p> 
+    </mat-tab>
+</mat-tab-group>
+<button mat-raised-button (click)="pushTabs()" color="primary">AddTabs</button>
+<!-- Button for removal of tabs  -->
+<button mat-raised-button  (click)="removeTab(tabs.length-1)" color="primary" >RemoveTab</button>
